@@ -28,57 +28,105 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnSignUp = new Button();
-            button1 = new Button();
+            btnLogin1 = new Button();
+            btnSignup1 = new Button();
+            label2 = new Label();
+            label3 = new Label();
             label1 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
-            // btnSignUp
+            // btnLogin1
             // 
-            btnSignUp.Location = new Point(140, 100);
-            btnSignUp.Name = "btnSignUp";
-            btnSignUp.Size = new Size(94, 29);
-            btnSignUp.TabIndex = 0;
-            btnSignUp.Text = "LOG IN";
-            btnSignUp.UseVisualStyleBackColor = true;
-            btnSignUp.Click += btnSignUp_Click;
+            btnLogin1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            btnLogin1.Location = new Point(319, 271);
+            btnLogin1.Name = "btnLogin1";
+            btnLogin1.Size = new Size(145, 56);
+            btnLogin1.TabIndex = 0;
+            btnLogin1.Text = "LOG IN";
+            btnLogin1.UseVisualStyleBackColor = true;
+            btnLogin1.Click += btnLogin1_Click;
             // 
-            // button1
+            // btnSignup1
             // 
-            button1.Location = new Point(140, 65);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 1;
-            button1.Text = "SIGN UP";
-            button1.UseVisualStyleBackColor = true;
+            btnSignup1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            btnSignup1.Location = new Point(154, 271);
+            btnSignup1.Name = "btnSignup1";
+            btnSignup1.Size = new Size(145, 56);
+            btnSignup1.TabIndex = 1;
+            btnSignup1.Text = "SIGN UP";
+            btnSignup1.UseVisualStyleBackColor = true;
+            btnSignup1.Click += btnSignup1_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Palatino Linotype", 12F, FontStyle.Bold);
+            label2.Location = new Point(12, 20);
+            label2.Name = "label2";
+            label2.Size = new Size(230, 27);
+            label2.TabIndex = 3;
+            label2.Text = "Welcome to Caffeignity!";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Palatino Linotype", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(90, 229);
+            label3.Name = "label3";
+            label3.Size = new Size(463, 27);
+            label3.TabIndex = 4;
+            label3.Text = "Discover more by starting esspresso who you are!";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(63, 9);
+            label1.Font = new Font("Palatino Linotype", 12F, FontStyle.Bold);
+            label1.Location = new Point(12, 61);
             label1.Name = "label1";
-            label1.Size = new Size(254, 23);
-            label1.TabIndex = 2;
-            label1.Text = "How would you like to proceed?";
+            label1.Size = new Size(335, 54);
+            label1.TabIndex = 5;
+            label1.Text = "Rich, bold, and irresistible smooth- \r\ncoffee that wakes your senses.";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Red;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(583, -1);
+            button1.Name = "button1";
+            button1.Size = new Size(53, 35);
+            button1.TabIndex = 6;
+            button1.Text = "X";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(380, 166);
-            Controls.Add(label1);
+            ClientSize = new Size(636, 354);
             Controls.Add(button1);
-            Controls.Add(btnSignUp);
+            Controls.Add(label1);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(btnSignup1);
+            Controls.Add(btnLogin1);
             Name = "Form1";
             Text = "Cafeteria System";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button btnSignUp;
-        private Button button1;
+        private Button btnLogin1;
+        private Button btnSignup1;
+        private Label label2;
+        private Label label3;
         private Label label1;
+        private Button button1;
+
     }
 }

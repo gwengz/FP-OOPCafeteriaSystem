@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace FP_OOPCafeteriaSystem
 {
-    public partial class Account : Form
+    public partial class RecordPurchase : Form
     {
-        public Account()
+        public RecordPurchase()
         {
             InitializeComponent();
-        }
-
-        private void Account_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
