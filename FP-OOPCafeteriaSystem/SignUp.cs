@@ -19,9 +19,7 @@ namespace FP_OOPCafeteriaSystem
 
         private void btnExit__su_Click(object sender, EventArgs e)
         {
-            Form1 main = new Form1();
-            main.Show();
-            this.Close();
+            this.Close(); 
         }
 
         private void btnSignup2_Click(object sender, EventArgs e)
@@ -30,21 +28,19 @@ namespace FP_OOPCafeteriaSystem
                 || string.IsNullOrWhiteSpace(txtboxUsername_su.Text)
                 || string.IsNullOrWhiteSpace(txtboxPassword_su.Text))
             {
-                MessageBox.Show("To proceed, please fill in all the " +
-                    "needed information. Please try again.",
+                MessageBox.Show(
+                    "Please fill in all the needed information.",
                     "Missing Information",
                     MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning);
+                    MessageBoxIcon.Warning
+                );
                 return;
             }
+
             Menu menu = new Menu(txtboxName_su.Text);
             menu.Show();
+
             this.Hide();
-        }
-
-        private void SignUp_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

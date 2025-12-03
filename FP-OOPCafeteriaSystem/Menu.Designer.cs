@@ -44,7 +44,6 @@
             btnAddcs.TabIndex = 2;
             btnAddcs.Text = "Add customer";
             btnAddcs.UseVisualStyleBackColor = true;
-            btnAddcs.Click += button1_Click;
             // 
             // btnMakeOrder
             // 
@@ -54,7 +53,6 @@
             btnMakeOrder.TabIndex = 3;
             btnMakeOrder.Text = "Make an order";
             btnMakeOrder.UseVisualStyleBackColor = true;
-            btnMakeOrder.Click += btnMakeOrder_Click;
             // 
             // btnHistory
             // 
@@ -73,6 +71,7 @@
             btnLogout.TabIndex = 5;
             btnLogout.Text = "Log out";
             btnLogout.UseVisualStyleBackColor = true;
+            btnLogout.Click += btnLogout_Click;
             // 
             // label2
             // 

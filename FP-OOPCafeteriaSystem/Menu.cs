@@ -12,19 +12,25 @@ namespace FP_OOPCafeteriaSystem
 {
     public partial class Menu : Form
     {
-        private string customerName;
+        private string _customerName;
 
-        public Menu(string name)
+        public Menu(string customerName)
         {
             InitializeComponent();
-            customerName = name;   // store the name from SignUp/ExistingAccount
+            _customerName = customerName;
         }
 
         private void btnOrder_Click(object sender, EventArgs e)
         {
-            // PASS the name to OrderForm
-            OrderForm order = new OrderForm(customerName);
+            OrderForm order = new OrderForm(_customerName);
             order.Show();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            SignUp signUp = new SignUp(); // create a new SignUp form
+            signUp.Show();
+            this.Close(); // close Menu
         }
     }
 }

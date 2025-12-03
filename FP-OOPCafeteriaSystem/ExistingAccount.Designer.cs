@@ -45,7 +45,6 @@
             txtboxName.Name = "txtboxName";
             txtboxName.Size = new Size(275, 30);
             txtboxName.TabIndex = 3;
-            txtboxName.TextChanged += txtboxName_TextChanged;
             // 
             // btnLogin2
             // 
