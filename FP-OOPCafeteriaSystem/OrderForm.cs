@@ -8,6 +8,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.WebRequestMethods;
 
 namespace FP_OOPCafeteriaSystem
 {
@@ -49,7 +50,7 @@ namespace FP_OOPCafeteriaSystem
             string dateTime = DateTime.Now.ToString("MMMM dd, yyyy - hh:mm tt");
 
             MessageBox.Show(
-                $"ORDER NUMBER: {orderNumber}\n\n" +
+            $"ORDER NUMBER: {orderNumber}\n\n" +
                 "Customer: " + customerName + "\n\n" +  
                 $"Drink: {drink} - {temperature}\n" +
                 $"Date & Time: {dateTime}",
