@@ -13,12 +13,11 @@ namespace FP_OOPCafeteriaSystem
 {
     public partial class OrderForm : Form
     {
-        public string customerName;
-
+        private string customerName;
         public OrderForm(string name)
         {
             InitializeComponent();
-            customerName = name;   // Name successfully passed here!
+            customerName = name;   
 
             cmbDrinks.Items.Add("Americano");
             cmbDrinks.Items.Add("Spanish Latte");
@@ -32,7 +31,6 @@ namespace FP_OOPCafeteriaSystem
             cmbTemperature.SelectedIndex = 0;
             cmbDrinks.SelectedIndex = 0;
         }
-
         private void btnPlaceOrder_Click(object sender, EventArgs e)
         {
             if (cmbDrinks.SelectedIndex == -1 ||
@@ -52,7 +50,7 @@ namespace FP_OOPCafeteriaSystem
 
             MessageBox.Show(
                 $"ORDER NUMBER: {orderNumber}\n\n" +
-                "Customer: " + customerName +"\n\n" +
+                "Customer: " + customerName + "\n\n" +  
                 $"Drink: {drink} - {temperature}\n" +
                 $"Date & Time: {dateTime}",
                 "ORDER PLACED SUCCESSFULLY!",

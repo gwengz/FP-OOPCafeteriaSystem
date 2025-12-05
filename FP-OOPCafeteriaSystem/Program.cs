@@ -7,7 +7,7 @@ namespace FP_OOPCafeteriaSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SignUp());
+            Application.Run(new Form1());
         }
     }
 }

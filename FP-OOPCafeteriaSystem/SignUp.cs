@@ -19,7 +19,7 @@ namespace FP_OOPCafeteriaSystem
 
         private void btnExit__su_Click(object sender, EventArgs e)
         {
-            this.Close(); 
+            this.Close();
         }
 
         private void btnSignup2_Click(object sender, EventArgs e)
@@ -41,6 +41,11 @@ namespace FP_OOPCafeteriaSystem
             menu.Show();
 
             this.Hide();
+        }
+
+        private void SignUp_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

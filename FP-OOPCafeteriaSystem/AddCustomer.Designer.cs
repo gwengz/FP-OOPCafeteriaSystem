@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddCustomer));
             dgvCustomers = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dgvCustomers).BeginInit();
             SuspendLayout();
@@ -35,18 +36,21 @@
             // dgvCustomers
             // 
             dgvCustomers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvCustomers.Location = new Point(29, 82);
+            dgvCustomers.Location = new Point(23, 53);
+            dgvCustomers.Margin = new Padding(2, 2, 2, 2);
             dgvCustomers.Name = "dgvCustomers";
             dgvCustomers.RowHeadersWidth = 51;
-            dgvCustomers.Size = new Size(493, 185);
+            dgvCustomers.Size = new Size(383, 121);
             dgvCustomers.TabIndex = 0;
             // 
             // AddCustomer
             // 
-            AutoScaleDimensions = new SizeF(9F, 23F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(622, 293);
             Controls.Add(dgvCustomers);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "AddCustomer";
             Text = "AddCustomer";
             ((System.ComponentModel.ISupportInitialize)dgvCustomers).EndInit();

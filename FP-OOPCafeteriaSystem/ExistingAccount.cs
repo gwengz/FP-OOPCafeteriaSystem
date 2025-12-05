@@ -26,7 +26,7 @@ namespace FP_OOPCafeteriaSystem
 
         private void btnLogin2_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtboxName.Text)  
+            if (string.IsNullOrWhiteSpace(txtboxName.Text)
              || string.IsNullOrWhiteSpace(txtboxUsername.Text)
              || string.IsNullOrWhiteSpace(txtboxPassword.Text))
             {
@@ -40,9 +40,14 @@ namespace FP_OOPCafeteriaSystem
 
             MessageBox.Show("Login successful!");
 
-            Menu menu = new Menu(txtboxName.Text); 
+            Menu menu = new Menu(txtboxName.Text);
             menu.Show();
             this.Hide();
+        }
+
+        private void txtboxName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

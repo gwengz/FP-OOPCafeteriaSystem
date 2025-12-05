@@ -28,9 +28,22 @@ namespace FP_OOPCafeteriaSystem
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            SignUp signUp = new SignUp(); // create a new SignUp form
-            signUp.Show();
-            this.Close(); // close Menu
+            Form1 loginForm = new Form1(); 
+            loginForm.Show();              
+            this.Close();                 
+        }
+
+        private void btnAddcs_Click(object sender, EventArgs e)
+        {
+            Form1 loginForm = new Form1();
+            loginForm.Show();
+            this.Close();
+        }
+
+        private void btnMakeOrder_Click(object sender, EventArgs e)
+        {
+            OrderForm orderForm = new OrderForm(_customerName); 
+            orderForm.Show();                      
         }
     }
 }
