@@ -12,13 +12,14 @@ using static System.Net.WebRequestMethods;
 
 namespace FP_OOPCafeteriaSystem
 {
+    // OrderForm.cs
     public partial class OrderForm : Form
     {
         private string customerName;
         public OrderForm(string name)
         {
             InitializeComponent();
-            customerName = name;   
+            customerName = name;
 
             cmbDrinks.Items.Add("Americano");
             cmbDrinks.Items.Add("Spanish Latte");
@@ -47,11 +48,21 @@ namespace FP_OOPCafeteriaSystem
             Random randomNumber = new Random();
             int orderNumber = randomNumber.Next(1, 50);
 
-            string dateTime = DateTime.Now.ToString("MMMM dd, yyyy - hh:mm tt");
+            DateTime now = DateTime.Now;
+
+            // Add the order to the shared HistoryList
+            Menu.HistoryList.Add(new OrderHistory
+            {
+                OrderID = orderNumber.ToString(),
+                CustomerName = customerName,
+                DatePlaced = now
+            });
+
+            string dateTime = now.ToString("MMMM dd, yyyy - hh:mm tt");
 
             MessageBox.Show(
             $"ORDER NUMBER: {orderNumber}\n\n" +
-                "Customer: " + customerName + "\n\n" +  
+                "Customer: " + customerName + "\n\n" +
                 $"Drink: {drink} - {temperature}\n" +
                 $"Date & Time: {dateTime}",
                 "ORDER PLACED SUCCESSFULLY!",
