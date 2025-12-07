@@ -11,8 +11,6 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace FP_OOPCafeteriaSystem
 {
-    // Menu.cs (only relevant addition)
-    // MENU.CS (no changes needed, your code is already correct)
 
     public partial class Menu : Form
     {
@@ -36,6 +34,26 @@ namespace FP_OOPCafeteriaSystem
         {
             History historyForm = new History();
             historyForm.Show();
+        }
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Close();
+        }
+
+        private void btnAddcs_Click(object sender, EventArgs e)
+        {
+            Form1 main = new Form1();
+            main.Show();
+            this.Close();
+        }
+
+        private void btnLogout_Click_1(object sender, EventArgs e)
+        {
+            Form1 main = new Form1();
+            main.Show();
+            this.Close();
         }
     }
 }

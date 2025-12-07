@@ -35,22 +35,21 @@
             // dgvCustomers
             // 
             dgvCustomers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvCustomers.Location = new Point(23, 53);
-            dgvCustomers.Margin = new Padding(2, 2, 2, 2);
+            dgvCustomers.Location = new Point(30, 81);
             dgvCustomers.Name = "dgvCustomers";
             dgvCustomers.RowHeadersWidth = 51;
-            dgvCustomers.Size = new Size(383, 121);
+            dgvCustomers.Size = new Size(492, 186);
             dgvCustomers.TabIndex = 0;
             // 
             // AddCustomer
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(622, 293);
+            ClientSize = new Size(800, 449);
             Controls.Add(dgvCustomers);
-            Margin = new Padding(2, 2, 2, 2);
             Name = "AddCustomer";
             Text = "AddCustomer";
+            Load += AddCustomer_Load;
             ((System.ComponentModel.ISupportInitialize)dgvCustomers).EndInit();
             ResumeLayout(false);
         }

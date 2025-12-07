@@ -16,5 +16,10 @@ namespace FP_OOPCafeteriaSystem
         {
             InitializeComponent();
         }
+
+        private void AddCustomer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

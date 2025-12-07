@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace FP_OOPCafeteriaSystem
 {
@@ -47,6 +48,11 @@ namespace FP_OOPCafeteriaSystem
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void listHistory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 

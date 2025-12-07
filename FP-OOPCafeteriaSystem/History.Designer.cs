@@ -49,6 +49,7 @@
             listHistory.Size = new Size(771, 186);
             listHistory.TabIndex = 2;
             listHistory.UseCompatibleStateImageBehavior = false;
+            listHistory.SelectedIndexChanged += listHistory_SelectedIndexChanged;
             // 
             // History
             // 

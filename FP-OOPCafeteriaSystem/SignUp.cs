@@ -19,6 +19,8 @@ namespace FP_OOPCafeteriaSystem
 
         private void btnExit__su_Click(object sender, EventArgs e)
         {
+            Form1 main = new Form1();
+            main.Show();
             this.Close();
         }
 
