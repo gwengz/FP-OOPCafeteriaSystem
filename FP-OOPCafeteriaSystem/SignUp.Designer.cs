@@ -48,6 +48,7 @@
             txtboxPassword_su.PasswordChar = '*';
             txtboxPassword_su.Size = new Size(275, 30);
             txtboxPassword_su.TabIndex = 21;
+            txtboxPassword_su.TextAlign = HorizontalAlignment.Center;
             // 
             // txtboxUsername_su
             // 
@@ -55,6 +56,7 @@
             txtboxUsername_su.Name = "txtboxUsername_su";
             txtboxUsername_su.Size = new Size(275, 30);
             txtboxUsername_su.TabIndex = 20;
+            txtboxUsername_su.TextAlign = HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -121,6 +123,7 @@
             txtboxName_su.Name = "txtboxName_su";
             txtboxName_su.Size = new Size(275, 30);
             txtboxName_su.TabIndex = 14;
+            txtboxName_su.TextAlign = HorizontalAlignment.Center;
             // 
             // label5
             // 

@@ -47,6 +47,7 @@
             txtboxName.Name = "txtboxName";
             txtboxName.Size = new Size(275, 30);
             txtboxName.TabIndex = 3;
+            txtboxName.TextAlign = HorizontalAlignment.Center;
             txtboxName.TextChanged += txtboxName_TextChanged;
             // 
             // btnLogin2
@@ -115,6 +116,7 @@
             txtboxUsername.Name = "txtboxUsername";
             txtboxUsername.Size = new Size(275, 30);
             txtboxUsername.TabIndex = 11;
+            txtboxUsername.TextAlign = HorizontalAlignment.Center;
             // 
             // txtboxPassword
             // 
@@ -123,6 +125,7 @@
             txtboxPassword.PasswordChar = '*';
             txtboxPassword.Size = new Size(275, 30);
             txtboxPassword.TabIndex = 12;
+            txtboxPassword.TextAlign = HorizontalAlignment.Center;
             // 
             // label4
             // 
