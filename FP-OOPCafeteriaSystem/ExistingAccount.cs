@@ -49,5 +49,10 @@ namespace FP_OOPCafeteriaSystem
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

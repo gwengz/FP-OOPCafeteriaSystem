@@ -22,6 +22,7 @@ namespace FP_OOPCafeteriaSystem
         {
             InitializeComponent();
             _customerName = customerName;
+            label3.Text = "WELCOME, " + _customerName + "!";
         }
 
         private void btnMakeOrder_Click(object sender, EventArgs e)
@@ -35,6 +36,7 @@ namespace FP_OOPCafeteriaSystem
             History historyForm = new History();
             historyForm.Show();
         }
+
         private void btnLogout_Click(object sender, EventArgs e)
         {
             Form1 form1 = new Form1();
@@ -54,6 +56,11 @@ namespace FP_OOPCafeteriaSystem
             Form1 main = new Form1();
             main.Show();
             this.Close();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

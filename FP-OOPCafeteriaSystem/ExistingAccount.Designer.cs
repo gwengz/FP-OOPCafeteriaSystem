@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExistingAccount));
             txtboxName = new TextBox();
             btnLogin2 = new Button();
             btnExit_login = new Button();
@@ -37,11 +38,12 @@
             txtboxUsername = new TextBox();
             txtboxPassword = new TextBox();
             label4 = new Label();
+            label5 = new Label();
             SuspendLayout();
             // 
             // txtboxName
             // 
-            txtboxName.Location = new Point(172, 84);
+            txtboxName.Location = new Point(194, 138);
             txtboxName.Name = "txtboxName";
             txtboxName.Size = new Size(275, 30);
             txtboxName.TabIndex = 3;
@@ -49,83 +51,112 @@
             // 
             // btnLogin2
             // 
-            btnLogin2.Location = new Point(264, 205);
+            btnLogin2.BackColor = SystemColors.ActiveBorder;
+            btnLogin2.Font = new Font("Lucida Fax", 10.2F);
+            btnLogin2.Location = new Point(285, 370);
             btnLogin2.Name = "btnLogin2";
             btnLogin2.Size = new Size(95, 34);
             btnLogin2.TabIndex = 6;
             btnLogin2.Text = "Log In";
-            btnLogin2.UseVisualStyleBackColor = true;
+            btnLogin2.UseVisualStyleBackColor = false;
             btnLogin2.Click += btnLogin2_Click;
             // 
             // btnExit_login
             // 
-            btnExit_login.Location = new Point(264, 244);
+            btnExit_login.BackColor = SystemColors.Menu;
+            btnExit_login.Font = new Font("Lucida Fax", 10.2F);
+            btnExit_login.Location = new Point(12, 438);
             btnExit_login.Name = "btnExit_login";
             btnExit_login.Size = new Size(95, 34);
             btnExit_login.TabIndex = 7;
             btnExit_login.Text = "EXIT";
-            btnExit_login.UseVisualStyleBackColor = true;
+            btnExit_login.UseVisualStyleBackColor = false;
             btnExit_login.Click += button2_Click_1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Palatino Linotype", 10.2F);
-            label1.Location = new Point(75, 92);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Lucida Fax", 10.2F, FontStyle.Bold);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(303, 171);
             label1.Name = "label1";
-            label1.Size = new Size(60, 23);
+            label1.Size = new Size(59, 20);
             label1.TabIndex = 8;
-            label1.Text = "Name:";
+            label1.Text = "Name";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Palatino Linotype", 10.2F);
-            label2.Location = new Point(75, 127);
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Lucida Fax", 10.2F, FontStyle.Bold);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(281, 243);
             label2.Name = "label2";
-            label2.Size = new Size(92, 23);
+            label2.Size = new Size(99, 20);
             label2.TabIndex = 9;
-            label2.Text = "Username:";
+            label2.Text = "Username";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Palatino Linotype", 10.2F);
-            label3.Location = new Point(75, 164);
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Lucida Fax", 10.2F, FontStyle.Bold);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(288, 313);
             label3.Name = "label3";
-            label3.Size = new Size(87, 23);
+            label3.Size = new Size(95, 20);
             label3.TabIndex = 10;
-            label3.Text = "Password:";
+            label3.Text = "Password";
             // 
             // txtboxUsername
             // 
-            txtboxUsername.Location = new Point(172, 121);
+            txtboxUsername.Location = new Point(194, 210);
             txtboxUsername.Name = "txtboxUsername";
             txtboxUsername.Size = new Size(275, 30);
             txtboxUsername.TabIndex = 11;
             // 
             // txtboxPassword
             // 
-            txtboxPassword.Location = new Point(172, 156);
+            txtboxPassword.Location = new Point(194, 280);
             txtboxPassword.Name = "txtboxPassword";
+            txtboxPassword.PasswordChar = '*';
             txtboxPassword.Size = new Size(275, 30);
             txtboxPassword.TabIndex = 12;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Palatino Linotype", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(12, 31);
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(12, 23);
             label4.Name = "label4";
-            label4.Size = new Size(124, 27);
+            label4.Size = new Size(435, 32);
             label4.TabIndex = 23;
-            label4.Text = "Please log in";
+            label4.Text = "You are on the right track! :)";
+            label4.Click += label4_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Lucida Fax", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.Gray;
+            label5.Location = new Point(12, 97);
+            label5.Name = "label5";
+            label5.Size = new Size(395, 20);
+            label5.TabIndex = 24;
+            label5.Text = "Please fill out all the information needed. ";
             // 
             // ExistingAccount
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(528, 319);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(661, 484);
+            Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(txtboxPassword);
             Controls.Add(txtboxUsername);
@@ -136,7 +167,6 @@
             Controls.Add(btnLogin2);
             Controls.Add(txtboxName);
             Name = "ExistingAccount";
-            Text = "LOGIN FORM";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -151,5 +181,6 @@
         private TextBox txtboxUsername;
         private TextBox txtboxPassword;
         private Label label4;
+        private Label label5;
     }
 }

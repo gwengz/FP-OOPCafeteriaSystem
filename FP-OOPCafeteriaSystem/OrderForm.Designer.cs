@@ -40,27 +40,25 @@
             // cmbDrinks
             // 
             cmbDrinks.FormattingEnabled = true;
-            cmbDrinks.Location = new Point(44, 85);
-            cmbDrinks.Margin = new Padding(2);
+            cmbDrinks.Location = new Point(66, 107);
             cmbDrinks.Name = "cmbDrinks";
-            cmbDrinks.Size = new Size(118, 23);
+            cmbDrinks.Size = new Size(210, 31);
             cmbDrinks.TabIndex = 0;
             // 
             // cmbTemperature
             // 
             cmbTemperature.FormattingEnabled = true;
-            cmbTemperature.Location = new Point(194, 85);
-            cmbTemperature.Margin = new Padding(2);
+            cmbTemperature.Location = new Point(298, 107);
             cmbTemperature.Name = "cmbTemperature";
-            cmbTemperature.Size = new Size(118, 23);
+            cmbTemperature.Size = new Size(210, 31);
             cmbTemperature.TabIndex = 1;
             // 
             // btnPlaceOrder
             // 
-            btnPlaceOrder.Location = new Point(253, 157);
-            btnPlaceOrder.Margin = new Padding(2);
+            btnPlaceOrder.Font = new Font("Lucida Fax", 10.8F, FontStyle.Bold);
+            btnPlaceOrder.Location = new Point(400, 214);
             btnPlaceOrder.Name = "btnPlaceOrder";
-            btnPlaceOrder.Size = new Size(91, 25);
+            btnPlaceOrder.Size = new Size(134, 40);
             btnPlaceOrder.TabIndex = 2;
             btnPlaceOrder.Text = "Place Order";
             btnPlaceOrder.UseVisualStyleBackColor = true;
@@ -72,10 +70,9 @@
             label1.BackColor = Color.Tan;
             label1.BorderStyle = BorderStyle.FixedSingle;
             label1.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
-            label1.Location = new Point(51, 58);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new Point(66, 66);
             label1.Name = "label1";
-            label1.Size = new Size(102, 20);
+            label1.Size = new Size(127, 25);
             label1.TabIndex = 3;
             label1.Text = "Choose a drink";
             // 
@@ -85,19 +82,18 @@
             label2.BackColor = Color.Tan;
             label2.BorderStyle = BorderStyle.FixedSingle;
             label2.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
-            label2.Location = new Point(212, 58);
-            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Location = new Point(298, 66);
             label2.Name = "label2";
-            label2.Size = new Size(88, 20);
+            label2.Size = new Size(110, 25);
             label2.TabIndex = 4;
             label2.Text = "Temperature";
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(9, 8);
-            btnBack.Margin = new Padding(2);
+            btnBack.Font = new Font("Lucida Fax", 10.8F, FontStyle.Bold);
+            btnBack.Location = new Point(12, 12);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(53, 23);
+            btnBack.Size = new Size(68, 35);
             btnBack.TabIndex = 5;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
@@ -105,19 +101,19 @@
             // 
             // OrderForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(351, 186);
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(556, 266);
             Controls.Add(btnBack);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(btnPlaceOrder);
             Controls.Add(cmbTemperature);
             Controls.Add(cmbDrinks);
-            Margin = new Padding(2);
+            DoubleBuffered = true;
             Name = "OrderForm";
-            Text = "OrderForm";
             ResumeLayout(false);
             PerformLayout();
         }
