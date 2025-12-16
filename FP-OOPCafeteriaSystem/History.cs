@@ -11,8 +11,6 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace FP_OOPCafeteriaSystem
 {
-    // HISTORY.CS - Updated to use ListView named listHistory instead of DataGridView
-
     public partial class History : Form
     {
         public History()

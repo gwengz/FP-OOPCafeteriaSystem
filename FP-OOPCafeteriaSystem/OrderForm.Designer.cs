@@ -40,25 +40,28 @@
             // cmbDrinks
             // 
             cmbDrinks.FormattingEnabled = true;
-            cmbDrinks.Location = new Point(66, 107);
+            cmbDrinks.Location = new Point(41, 90);
+            cmbDrinks.Margin = new Padding(2, 2, 2, 2);
             cmbDrinks.Name = "cmbDrinks";
-            cmbDrinks.Size = new Size(210, 31);
+            cmbDrinks.Size = new Size(164, 23);
             cmbDrinks.TabIndex = 0;
             // 
             // cmbTemperature
             // 
             cmbTemperature.FormattingEnabled = true;
-            cmbTemperature.Location = new Point(298, 107);
+            cmbTemperature.Location = new Point(222, 90);
+            cmbTemperature.Margin = new Padding(2, 2, 2, 2);
             cmbTemperature.Name = "cmbTemperature";
-            cmbTemperature.Size = new Size(210, 31);
+            cmbTemperature.Size = new Size(164, 23);
             cmbTemperature.TabIndex = 1;
             // 
             // btnPlaceOrder
             // 
             btnPlaceOrder.Font = new Font("Lucida Fax", 10.8F, FontStyle.Bold);
-            btnPlaceOrder.Location = new Point(400, 214);
+            btnPlaceOrder.Location = new Point(297, 184);
+            btnPlaceOrder.Margin = new Padding(2, 2, 2, 2);
             btnPlaceOrder.Name = "btnPlaceOrder";
-            btnPlaceOrder.Size = new Size(134, 40);
+            btnPlaceOrder.Size = new Size(118, 37);
             btnPlaceOrder.TabIndex = 2;
             btnPlaceOrder.Text = "Place Order";
             btnPlaceOrder.UseVisualStyleBackColor = true;
@@ -70,9 +73,10 @@
             label1.BackColor = Color.Tan;
             label1.BorderStyle = BorderStyle.FixedSingle;
             label1.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
-            label1.Location = new Point(66, 66);
+            label1.Location = new Point(41, 63);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(127, 25);
+            label1.Size = new Size(102, 20);
             label1.TabIndex = 3;
             label1.Text = "Choose a drink";
             // 
@@ -82,18 +86,20 @@
             label2.BackColor = Color.Tan;
             label2.BorderStyle = BorderStyle.FixedSingle;
             label2.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
-            label2.Location = new Point(298, 66);
+            label2.Location = new Point(222, 63);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(110, 25);
+            label2.Size = new Size(88, 20);
             label2.TabIndex = 4;
             label2.Text = "Temperature";
             // 
             // btnBack
             // 
             btnBack.Font = new Font("Lucida Fax", 10.8F, FontStyle.Bold);
-            btnBack.Location = new Point(12, 12);
+            btnBack.Location = new Point(9, 8);
+            btnBack.Margin = new Padding(2, 2, 2, 2);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(68, 35);
+            btnBack.Size = new Size(67, 23);
             btnBack.TabIndex = 5;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
@@ -101,11 +107,11 @@
             // 
             // OrderForm
             // 
-            AutoScaleDimensions = new SizeF(9F, 23F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(556, 266);
+            ClientSize = new Size(452, 252);
             Controls.Add(btnBack);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -113,6 +119,7 @@
             Controls.Add(cmbTemperature);
             Controls.Add(cmbDrinks);
             DoubleBuffered = true;
+            Margin = new Padding(2, 2, 2, 2);
             Name = "OrderForm";
             ResumeLayout(false);
             PerformLayout();
